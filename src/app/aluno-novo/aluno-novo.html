@@ -1,0 +1,35 @@
+<div class="content">
+    <mat-card-title>Alunos</mat-card-title>
+    <br>
+    <mat-card-subtitle><br>Cadastrar Aluno</mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <br>
+    <br>
+    <div class="input1">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome do Aluno</mat-label>
+            <input matInput id="nome" required [(ngModel)]="aluno.nome" name="nome" placeholder="Digite o nome do aluno">
+            <mat-icon matSuffix>edit</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="input2">
+        <mat-form-field appearance="outline">
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput id="dt_nasc" required [(ngModel)]="aluno.dt_nasc" name="dt_nasc" placeholder="Digite a data de nascimento do aluno">
+            <mat-icon matSuffix>calendar_today</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="input3">
+        <mat-form-field appearance="outline">
+            <mat-label>Sexo</mat-label>
+            <input matInput id="sexo" required [(ngModel)]="aluno.sexo" name="sexo" placeholder="Digite o sexo do aluno">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="button1" (click)="salvar()">
+        Salvar <img class="img-btn" src="assets/img/check_box.png">
+    </div>
+    <div class="button2" (click)="cancelar()">
+        Cancelar <img class="img-btn" src="assets/img/cancel.png">
+    </div>
+</div>
